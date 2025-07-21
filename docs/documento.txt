@@ -1,0 +1,156 @@
+# Google Computer Engine (GCE)
+
+    Infraestrutura como serviço (IaaS)
+    Criação e gerenciamento de máquinas virtuais: instancias
+    Todo gerenciamento é realizado pelo desenvolvedor
+
+    Principais Caracteristicas
+
+    - VMs com alto nível de personalização: CPU, mémoria, disco e sistema operacional
+    - Discos persistentes conectados as VMs
+    - Disco de inicialização: escolha ou crie sua imagem.
+    - Rede: fácil conexão a outros serviços da GCP e à internet
+    - Permite balanceamento de carga e autoescalamento
+    - Segurança: Firewalls, Gerenciamento de Identidade/Acesso e Criptografia
+    Melhor custo beneficio para execuções longas ou continuas
+
+    Casos de uso:
+    - Aplicativos Web
+    - Processamento de dados
+    - Machine Learning
+    - Servidores de jogos
+    - Desenvolvimento e testes
+
+    Prós
+
+    - Controle total sobre o ambiente
+    - Aplicativos complexos com necessidades especificas
+    - Econômico para cargas de trabalho longas
+
+    Contras
+
+    - Necessidade de gerenciamento
+    - Mais complexo de configurar e manter
+
+# Google App Engine (GAE)
+
+    Solução serverless totalmente gerenciada pelo GCP
+    Desenvolvedor só se preocupa com o código
+
+    Principais caracteristicas
+
+    - Totalmente gerenciado
+    - Sem servidor
+    - Escalabilidade
+    - Dois ambientes de implantação: Padrão e Flexivel
+    - O custo é por recursos utilizados
+
+    Casos de uso:
+
+    - Aplicações Web
+    - Backend de APIs
+    - Microserviços
+
+    Prós 
+
+    - Facilidade de uso
+    - Escalabilidade
+    - Flexibilidade de serviços serverless com escalonamento automático
+
+    Contra 
+
+    - Vinculação ao fornecedor
+    - Controle ilimitado
+    - Valor para aplicativos grandes
+
+Solução serveless
+# Google Kubernetes Engine (GKE)
+
+    Ambiente gerenciado para implantação de aplicativos conteinerizados
+    Construido sobre o sistema Kubernetes(K8S, open source): nós e clusters
+    Simplifica a orquestração de contêineres: implantação, escalonamento e balanceamento de carga
+    Desenvolvedor só se preocupa com o código
+
+    caracteristicas:
+
+    - Totalmente gerenciado, sem servidor
+    - Escalabilidade quase ilimitada
+    - Alta disponibilidade
+    - Segurança
+    - Integração com serviço da GPC
+    - O custo é por recursos utilizados
+
+    Casos de uso:
+    - Modernização de aplicativos legados
+    - Aplicativos nativos da nuvem
+    - Devops e pipelines de CI/CD
+    - Machine Learning
+
+    Prós
+    - Gerenciamento Simplificado de Kubernetes
+    - Escalabilidade e Elasticidade
+    - Flexibilidade do serviço serverless com escalonamento automático
+
+    Contras
+    - Vinculação ao fornecedor
+    - Controle limitado
+    - Preço para aplicativos grandes
+
+# Cloud Run (CR)
+
+    Ambiente gerenciado para implantação de aplicativos conteinerizados
+    Projeto facilita a construção e implantação de aplicativos escalaveis
+
+    caracteristicas:
+
+    - Totalmente gerenciado, sem servidor.
+    - Orientado a eventos.
+    - O custo é por recursos utilizados.
+
+    Casos de uso:
+
+    - Microserviços
+    - Aplicativos Web
+    - Backend de APIs
+    - Pipeline de processamento de dado
+
+    Prós 
+        - Facil de usar
+    Contras
+        - Inicialização a frio
+        - Vinculação ao fornecedor
+        - Controle limitado
+
+# Cloud Functions (GF)
+
+    Ambiente gerenciado para implantar aplicativos que executam funções.
+    São acionados por eventos com solicitação HTTP, alteração em banco de dados ou mensagens.
+
+    Principais caracteristicas:
+    - Totalmente gerenciado, sem servidor.
+    - Orientado a eventos
+    - O custo é por recursos utilizados.
+
+    Casos de uso:
+
+    - Aplicativos web simples
+    - Endpoints de APIs
+    - Processamento de dados
+    - Processamento de Imagens
+    - Automação e fluxo de trabalho
+
+    Prós
+    - Fácil de usar.
+
+    Contras
+    - Tempo de execução limitado
+    - Depuração
+    - Inicialização a frio
+    - Vinculação ao fornecedor
+
+Objetivo :
+
+    - Treinar um algoritmo simples de Machine Learning para classificação de imagens
+    - Desenvolver um aplicativo em Flask para utilizar o algortimo treinado para fazer predições
+    - Deploy de um app simples que serve o algortimo em ambiente de produção, utilizando os 5 serviços 
+    da GPC apresentados
